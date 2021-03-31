@@ -54,6 +54,9 @@ client.connect(err => {
                 console.log(result.insertedCount > 0)
             })
     })
+    app.get('/', (req, res) => {
+        res.send("Hi this is the server of ema john")
+    })
 });
 
 
